@@ -21,11 +21,17 @@ python backyard_flyer_solution.py
 
 Para ello se debe:
 
+Primera Etapa:
 - Cargar el mapa 2.5D
-- Discretizar el entorno en un grid y en un grafo 
+- Discretizar el entorno en un grid.
 - Definir el estado inicial y el estado objetivo. 
-- Realizar la búsqueda de los waypoints necesarios para llegar al objetivo con A star u otra técnica.
+- Realizar la búsqueda de los waypoints necesarios para llegar al objetivo con A star.
 - Usar un método de colinealidad o ray tracing para eliminar los waypoints innecesarios, si se usa un grid.
 - Retornar los waypoints en coordenadas ECEF para luego enviar comandos al drone y realizar la navegación.
+
+Segunda etapa:
+- Implementar Random Sampling para realizar un grafo y luego aplicar A star en la planificación de rutas.
+- Evaluar tiempos en A star con grid y Random Sampling.
+- Evaluar precisión de la ruta con cada método.
 
 
